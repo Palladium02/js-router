@@ -1,35 +1,37 @@
 # JS-Router
 
-JS-Router ist ein einfacher Router.
+JS-Router is a very simple routing system.
 
-## Prolog
+## Languages
+- [German](https://github.com/Palladium02/js-router/docs/de-docs.md)
 
-Wenn sie VSCode nutzen, empfehle ich die Installation der Extension es6-string-html.
-## Erstellen einer Router-Instanz
+## Prologue
+
+I highly recommend the installation of es6-string-html, when using VSCode.
+## Creating a router instance
 
 ```javascript
 const router = new Router();
 ```
 
 ### Parameter
-|Name|Typ|Default|Beschreibung|
+
+|name|type|default|description|
 |---|---|---|---|
-|selector|String|null|Gibt das Root-Element an|
-|history|Boolean|false|Nutzer kann mit zurück-Tasten navigieren|
-|debug|Boolean|false|debug-Nachrichten werden in der Konsole ausgegeben|
+|selector|String|null|selector for root element|
+|history|Boolean|false|enables navigation with browser control elements|
+|debug|Boolean|false|enables debug messages in the console|
 
-
-
-## Hinzufügen von Seiten
+## Adding pages
 
 ```javascript
 import home from 'relative/path/to/component.js';
 router.get('/home', home);
 ```
 
-'home' beschreibt hier die Komponente, die angezeigt werden soll, wenn der Link '/home' gedrückt wurde.
+'home' represents the components that should be rendered when clicking the corresponding link.
 
-## Komponenten
+## Components
 
 ```javascript
 export default () => {
@@ -47,4 +49,4 @@ export default () => {
 <div data-link="/home">Home</div>
 ```
 
-Ein Link wird durch ein HTML-Element dargestellt. Dieses Element muss das Attribute data-link haben, der Wert muss der Pfad sein, der aufgerufen werden soll.
+Links can be represented through every HTML-element. The link element has to have the data-link attribute.
