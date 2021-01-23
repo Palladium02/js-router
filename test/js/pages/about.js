@@ -1,5 +1,7 @@
 export default () => {
     return /*html*/`
-        <h1>About</h1>
+        <div class="page">
+            <h1>About</h1>
+        </div>
     `
 }

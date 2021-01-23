@@ -34,9 +34,12 @@ export default class Router {
         this.links.forEach(link => {
             link.addEventListener('click', (event) => {
                 let path = event.target.getAttribute('data-link');
-                let view = this.viewMap[path];
-                if(this.history) window.history.pushState(null, null, path);
-                this.render(view);
+                if(path !== this.getCurrentView()) {
+                    let view = this.viewMap[path];
+                    this.currentView = path;
+                    if(this.history) window.history.pushState(null, null, path);
+                    this.render(view);
+                }
             });
         });
     }
