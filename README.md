@@ -1,6 +1,8 @@
 # JS-Router
 
-JS-Router is a very simple routing system.
+<img alt="Typescript" src="https://img.shields.io/badge/typescript%20-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
+
+JS-Router is a very simple routing system build with Typescript.
 
 ## Languages
 - [German](https://github.com/Palladium02/js-router/blob/main/docs/de-docs.md)
