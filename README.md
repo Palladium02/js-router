@@ -3,7 +3,7 @@
 JS-Router is a very simple routing system.
 
 ## Languages
-- [German](https://github.com/Palladium02/js-router/docs/de-docs.md)
+- [German](https://github.com/Palladium02/js-router/blob/main/docs/de-docs.md)
 
 ## Prologue
 
