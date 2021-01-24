@@ -67,7 +67,6 @@ export default class Router {
     async setPopTrap() {
         window.addEventListener('popstate', async () => {
             let path: string = location.pathname;
-            console.log(path);
             this.rootElement.innerHTML = await this.viewMap[path]();
         });
 
